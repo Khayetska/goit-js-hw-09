@@ -39,6 +39,7 @@ const options = {
 
         if (timeRemaining <= 1000) {
           clearInterval(intervalId);
+          Notify.success('Time is up⏳');
         }
       }, 1000);
     });
