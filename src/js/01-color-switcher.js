@@ -4,6 +4,8 @@ const stopBtnEl = document.querySelector('[data-stop]');
 let intervalId = null;
 let clicked = false;
 
+stopBtnEl.disabled = true;
+
 startBtnEl.addEventListener('click', handleStartBtnClick);
 stopBtnEl.addEventListener('click', handleStopBtnClick);
 
