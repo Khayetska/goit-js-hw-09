@@ -24,6 +24,7 @@ function handleCreatePromisesSubmit(evt) {
   let delay = Number(delayInputEl.value);
   const step = Number(stepInputEl.value);
   const amount = Number(amountInputEl.value);
+  formEl.reset();
 
   for (let i = 0; i < amount; i += 1) {
     const position = i + 1;
